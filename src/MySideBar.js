@@ -20,7 +20,7 @@ class MySideBar extends Component {
               aria-controls={this.props.isToggler === 'true' && "navbar Support Content"}
               aria-expanded={this.props.isToggler === 'true' && "false"}
               aria-label={this.props.isToggler === 'true' && "Toggle navigation"}>
-              <img src={home}></img>
+              <img src={home} alt="home"></img>
               <span className="pl-2">Home</span>
               </div>
             </Link>
@@ -34,7 +34,7 @@ class MySideBar extends Component {
               aria-controls={this.props.isToggler === 'true' && "navbar Support Content"}
               aria-expanded={this.props.isToggler === 'true' && "false"}
               aria-label={this.props.isToggler === 'true' && "Toggle navigation"}>
-              <img src={kickstart}></img>
+              <img src={kickstart} alt="kickstart"></img>
               <span className="pl-2">Kickstart</span>
               </div>
             </Link>
@@ -47,7 +47,7 @@ class MySideBar extends Component {
               aria-controls={this.props.isToggler === 'true' && "navbar Support Content"}
               aria-expanded={this.props.isToggler === 'true' && "false"}
               aria-label={this.props.isToggler === 'true' && "Toggle navigation"}>
-              <img src={os}></img>
+              <img src={os} alt="os"></img>
               <span className="pl-2">OS</span>
               </div>
             </Link>
@@ -60,7 +60,7 @@ class MySideBar extends Component {
               aria-controls={this.props.isToggler === 'true' && "navbar Support Content"}
               aria-expanded={this.props.isToggler === 'true' && "false"}
               aria-label={this.props.isToggler === 'true' && "Toggle navigation"}>
-              <img src={network}></img>
+              <img src={network} alt="network"></img>
               <span className="pl-2">Network</span>
               </div>
             </Link>
@@ -73,7 +73,7 @@ class MySideBar extends Component {
               aria-controls={this.props.isToggler === 'true' && "navbar Support Content"}
               aria-expanded={this.props.isToggler === 'true' && "false"}
               aria-label={this.props.isToggler === 'true' && "Toggle navigation"}>
-              <img src={web}></img>
+              <img src={web} alt="web"></img>
               <span className="pl-2">Web</span>
               </div>
             </Link>
