@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.mysidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 0;
+    padding-top: 5em;
+}
+
+.myNavbar {
+    z-index: 10;
+    position: fixed;
+}
+
+.mainContent {
+    padding-top: 5em;
+}
+
+#start {
+    height: 220px;
+    width: 200px;
+    display: block;
+}
+
+.TextBorderGray {
+    border-color: gray;
+    border-style: solid;
+    padding: 2px;
+    border-radius: 20%;
+}
+
+.textWithRedUnderline {
+    text-decoration: underline red;
+    font-weight: 700;
+}
+.center {
+    text-align: center;
+}
