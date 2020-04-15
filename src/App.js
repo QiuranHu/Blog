@@ -55,8 +55,18 @@ class App extends Component {
             history.push(this.goToRandomPage());
           }}/>);
         }}>
+          
 
         </Route>
+
+        <Route exact path="/index.html" render={({history}) => {
+          return (<WelcomePage goToRandomPage={() => {
+            history.push(this.goToRandomPage());
+          }}/>);
+        }}>
+
+        </Route>
+
         <Route exact path="/home" render={({history}) => {
           return (<WelcomePage goToRandomPage={() => {
             history.push(this.goToRandomPage());

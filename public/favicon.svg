@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.45106,-0.000566527,0.000577572,1.47935,-44.332,-49.5622)">
+        <clipPath id="_clip1">
+            <rect x="31.355" y="34.022" width="136.821" height="134.488"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <path d="M168.104,67.531C168.104,49.013 152.777,33.979 133.898,33.979L65.488,33.979C46.609,33.979 31.282,49.013 31.282,67.531L31.282,134.917C31.282,153.434 46.609,168.468 65.488,168.468L133.898,168.468C152.777,168.468 168.104,153.434 168.104,134.917L168.104,67.531Z" style="fill:rgb(30,32,175);"/>
+        </g>
+    </g>
+    <g transform="matrix(0.975028,0,0,3.0971,0.915885,-197.893)">
+        <text x="97.283px" y="83.383px" style="font-family:'AcademyEngravedLetPlain', 'Academy Engraved LET';font-size:128px;fill:white;">_</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-4.05798,57.3106)">
+        <text x="44.272px" y="53.884px" style="font-family:'AppleSymbols', 'Apple Symbols';font-size:128px;fill:white;">&gt;</text>
+    </g>
+</svg>
