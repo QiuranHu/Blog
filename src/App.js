@@ -8,17 +8,20 @@ import Web from "./Web";
 import CSSBasic from './Web/CSSBasic';
 import ReactLifecycleEvent from './Web/ReactLifecycleEvent';
 import QueryResult from './QueryResult';
+import JavaScriptBasic from './Web/JavaScriptBasic';
 
 
 import './App.css';
 
 class App extends Component {
   state = {
-    pages: ["/web/cssbasic", "/web/react-lifecycle-event"],
+    pages: ["/web/cssbasic", "/web/react-lifecycle-event", "/web/javascript-basic"],
     query: "",
-    pageTitles: [{name: "CSS Basic", url:"/web/cssbasic", title:"CSS"}, 
-    {name:"React Lifecycle Event", url: "/web/react-lifecycle-event", title:"React"}]
-
+    pageTitles: [{name: "CSS Basics", url:"/web/cssbasic", title:"CSS"}, 
+    {name:"React Lifecycle Event", url: "/web/react-lifecycle-event", title:"React"},
+    {name:"JavaScript Basics", url:"/web/javascript-basic", title:"JavaScript"}
+  ],
+    
   }
   goToRandomPage = () => {
     function getRandomInt(max) {
@@ -83,6 +86,13 @@ class App extends Component {
           return (<QueryResult query={this.state.query} 
             pages={this.state.pages} 
             pageTitles={this.state.pageTitles}/>);
+        }}>
+
+        </Route>
+
+
+        <Route exact path="/web/javascript-basic" render={() => {
+          return (<JavaScriptBasic />)
         }}>
 
         </Route>

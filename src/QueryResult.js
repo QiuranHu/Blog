@@ -10,10 +10,10 @@ class QueryResult extends Component {
             return (
                 <div className="col-lg-10 ml-sm-auto mainContent">
                     <div className="text-center col-sm-6 mx-auto">
-                        <div class="alert alert-primary mt-5"  role="alert">
-                        <h4 class="alert-heading">You did not search anything!</h4>
+                        <div className="alert alert-primary mt-5"  role="alert">
+                        <h4 className="alert-heading">You did not search anything!</h4>
                         <hr></hr>
-                        <p class="mb-0">Please try again.</p>
+                        <p className="mb-0">Please try again.</p>
                         </div> 
                     </div>
                     
@@ -26,10 +26,10 @@ class QueryResult extends Component {
             return (
                 <div className="col-lg-10 ml-sm-auto mainContent">
                     <div className="text-center col-sm-6 mx-auto">
-                        <div class="alert alert-primary mt-5"  role="alert">
-                        <h4 class="alert-heading">Found nothing!</h4>
+                        <div className="alert alert-primary mt-5"  role="alert">
+                        <h4 className="alert-heading">Found nothing!</h4>
                         <hr></hr>
-                        <p class="mb-0">Please try again.</p>
+                        <p className="mb-0">Please try again.</p>
                         </div> 
                     </div>
                     
@@ -40,10 +40,10 @@ class QueryResult extends Component {
             <div className="col-lg-10 ml-sm-auto mainContent">
                 <div className="container mt-3">
                     <p>Here is the search results:</p>
-                    <div className="row">
+                    <div className="row mb-3">
 
                         {pages.map((page) => (
-                            <div className="col-sm-6 mt-sm-auto mt-3" key={page.url}>
+                            <div className="col-sm-6  mt-3" key={page.url}>
                                 <div className="card" >
                                     <div className="card-body">
                                         <h5 className="card-title">{page.title}</h5>

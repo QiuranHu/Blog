@@ -6,7 +6,7 @@ class CSSBasic extends Component {
             <div className="col-12 col-lg-10 ml-auto mainContent">
                 <div className="container mt-3">
                     <div className="center">
-                        <h2>CSS Basic</h2>
+                        <h2>CSS Basics</h2>
                     </div>
                     <h4>1. Cascade</h4>
                     <p>Cascade is used to dealing with conflicting declarations in CSS.</p>
