@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import MySideBar from './MySideBar';
 import serializeForm from 'form-serialize';
-
+import home from './home.svg';
+import kickstart from './kickstart.svg';
+import web from './web.svg';
+import search from './search.svg';
+import dehaze from './dehaze.svg';
 
 class MyNavBar extends Component {
 
@@ -14,43 +17,53 @@ class MyNavBar extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand-lg p-lg-3 navbar-light bg-white myNavbar w-100 border-bottom shadow-sm">
-                <Link className="navbar-brand" to="/">
-                    My blog
-                </Link>
-                <button className="navbar-toggler" type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbar Support Content"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                    <div>
-                        <MySideBar navAttribute="d-lg-none flex-column" isToggler="true" />
-
+            <div className="navbar">
+                <div className="navbar-content">
+                    <div className="navbar-logo" >
+                        <span className="navbar-icon">
+                            <img src={dehaze} alt="more information" id="navbar-more">
+                            </img>
+                        </span>
+                        <Link to="/" class="navbar-logo-text">My blog</Link>
                     </div>
-                    <form className="form-inline  my-2 my-lg-0 ml-lg-auto search" onSubmit={this.handleSubmit}>
-                        <input className="form-control mr-sm-2" type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                            name="search"
-                        ></input>
-                        <button className="btn btn-outline-success my-2 my-sm-0 d-none d-lg-block" type="submit"
-                            > Search </button>
-                        <button className="btn btn-outline-success my-2 my-sm-0 d-lg-none" type="submit" data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbar Support Content"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"> Search </button>
-                        
+
+                    <form className="navbar-input-container" onSubmit={this.handleSubmit}>
+                        <div className="navbar-input-box">
+                            <input className="navbar-input" placeholder="Search" name="search"></input>
+                        </div>
+
+                        <button className="navbar-input-submit">
+                            <img src={search} alt="search" class="navbar-input-submit-icon"
+                            type="submit"
+                            >
+                            </img>
+                        </button>
                     </form>
 
+                    <div className="navbar-icons-container">
+                        <div className="navbar-icons">
+                            <span className="navbar-icon" id="navbar-icon-search">
+                                <img src={search} alt="search">
+                                </img>
+                            </span>
+                            <Link className="navbar-icon navbar-icon-hide" to="/home">
+                                <img src={home} alt="home" >
+                                </img>
+                            </Link>
+                            <Link className="navbar-icon navbar-icon-hide" to="/kickstart">
+                                <img src={kickstart} alt="kick start" >
+                                </img>
+                            </Link>
+                            <Link className="navbar-icon navbar-icon-hide" to="/web">
+                                <img src={web} alt="web" >
+                                </img>
+                            </Link>
+
+                        </div>
+                    </div>
                 </div>
-
-
-            </nav>
+            </div>
+        
         )
     }
 }
