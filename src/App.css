@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -247,6 +247,7 @@ body {
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
 
 .mainContent h2 {
@@ -300,7 +301,6 @@ body {
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, 0.3fr);
     width: 100%;
     padding-top: 30px;
     padding-left: 20px;

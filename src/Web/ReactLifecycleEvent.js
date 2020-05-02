@@ -4,8 +4,8 @@ class ReactLifecycleEvent extends Component {
     render() {
         
         return (
-            <div className="col-12 col-lg-10 ml-auto mainContent">
-                <div className="container mt-3">
+            <div className="mainContent">
+                <div className="container">
                     <div className="center">
                        <p>This is an article about React.</p>
                     </div>
@@ -27,14 +27,14 @@ class ReactLifecycleEvent extends Component {
                     after a component is instantiated as well as it receives brand new props.</p>
                     <h4>Adding to the DOM</h4>
                     <p>The following lifecycle events will be called in order when 
-                        a component is being added to the DOM: <span className="badge badge-pill badge-danger">constructor()</span>, 
+                        a component is being added to the DOM: <span className="badge badge-pill badge-danger">constructor() </span>, 
                         <span className="badge badge-pill badge-danger">getDerivedStateFromProps() </span>, 
                         <span className="badge badge-pill badge-danger">render() </span>, 
                         <span className="badge badge-pill badge-danger">componentDidMount() </span>.
                     </p>
                     <h4>Re-rendering</h4>
-                    <p>The following lifecycle events will be called in order when re-rendering: 
-                    <span className="badge badge-pill badge-success">getDerivedStateFromProps() </span>, 
+                    <p>The following lifecycle events will be called in order when re-rendering:  
+                    <span className="badge badge-pill badge-success"> getDerivedStateFromProps() </span>, 
                     <span className="badge badge-pill badge-success">shouldComponetUpdate() </span>, 
                     <span className="badge badge-pill badge-success">render() </span>, 
                     <span className="badge badge-pill badge-success">getSnapshotBeforeUpdate() </span>, 
