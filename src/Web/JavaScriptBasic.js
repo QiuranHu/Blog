@@ -3,11 +3,13 @@ import React, {Component} from "react";
 class JavaScriptBasic extends Component {
     render() {
         return (
-            <div className="col-12 col-lg-10 ml-auto mainContent">
+            <div className="mainContent">
                 <div className="container mt-3">
                     <div className="center">
-                        <h2>JavaScript Basics</h2>
+                        <p>This is an article about JavaScript.</p>
                     </div>
+                    <div className="article-content">
+                    <h2>JavaScript Basics</h2>
                     <h4>1. Seven fundamental data types</h4>
                     <p>First 6 of them are primitive types.</p>
                     <p>1. <span className="textWithBackground">Number</span>: Any number, including numbers with decimals: 4, 8, 23.42.</p>
@@ -30,6 +32,7 @@ class JavaScriptBasic extends Component {
                     than or equal to the number.</p>
                     <p><span className="textWithBackground">Math.ceil(number)</span> returns the smallest integer greater
                     than or equal to the number.</p>
+                    </div>
                 </div>
             </div>
         )

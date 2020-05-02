@@ -1,43 +1,41 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Web extends Component {
     render() {
-        return <div className="col-lg-10 ml-sm-auto mainContent mb-3">
-            <div className="container mt-3">
-                <div className="row">
-                    <div className="col-sm-6  mt-3">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">CSS</h5>
-                                <p className="card-text">CSS Basics</p>
-                                <Link to="/web/cssbasic" className="btn btn-outline-success">Read</Link>
-                            </div>
-                        </div>
+        return <div className="cards">
+                <div className="card-container">
+                    <div className="card-class">
+                        CSS
                     </div>
-                    <div className="col-sm-6 mt-3">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">React</h5>
-                                <p className="card-text">React lifecycle events</p>
-                                <Link to="/web/react-lifecycle-event" className="btn btn-outline-success">Read</Link>
-                            </div>
-                        </div>
+                    <div className="card-content">
+                        <p className="card-title">CSS Basics</p>
+                        <Link to="/web/cssbasic" className="button-green">Read</Link>
                     </div>
-                    <div className="col-sm-6 mt-3">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">JavaScript</h5>
-                                <p className="card-text">JavaScript Basics</p>
-                                <Link to="/web/javascript-basic" className="btn btn-outline-success">Read</Link>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
+
+                <div className="card-container">
+                    <div className="card-class">
+                    React
+                    </div>
+                    <div className="card-content">
+                        <p className="card-title">React lifecycle events</p>
+                        <Link to="/web/react-lifecycle-event" className="button-green">Read</Link>
+                    </div>
+                </div>
+
+                <div className="card-container">
+                    <div className="card-class">
+                    JavaScript
+                    </div>
+                    <div className="card-content">
+                        <p className="card-title">JavaScript Basics</p>
+                        <Link to="/web/javascript-basic" className="button-green">Read</Link>
+                    </div>
+                </div>
+
             </div>
-        </div>
     }
 }
 

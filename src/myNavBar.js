@@ -24,7 +24,7 @@ class MyNavBar extends Component {
                             <img src={dehaze} alt="more information" id="navbar-more">
                             </img>
                         </span>
-                        <Link to="/" class="navbar-logo-text">My blog</Link>
+                        <Link to="/" className="navbar-logo-text">My blog</Link>
                     </div>
 
                     <form className="navbar-input-container" onSubmit={this.handleSubmit}>
@@ -33,7 +33,7 @@ class MyNavBar extends Component {
                         </div>
 
                         <button className="navbar-input-submit">
-                            <img src={search} alt="search" class="navbar-input-submit-icon"
+                            <img src={search} alt="search" className="navbar-input-submit-icon"
                             type="submit"
                             >
                             </img>

@@ -6,8 +6,10 @@ class CSSBasic extends Component {
             <div className="col-12 col-lg-10 ml-auto mainContent">
                 <div className="container mt-3">
                     <div className="center">
-                        <h2>CSS Basics</h2>
+                        <p>This is an article about CSS.</p>
                     </div>
+                    <div className="article-content">
+                    <h2>CSS Basics</h2>
                     <h4>1. Cascade</h4>
                     <p>Cascade is used to dealing with conflicting declarations in CSS.</p>
                     <p>First step is to compare the <span className="textWithRedUnderline">stylesheet origins</span> of these conflicting declarations.
@@ -40,6 +42,7 @@ class CSSBasic extends Component {
                     <p>2. Padding specifies the amount of space between the content area and the border.</p>
                     <p>3. Border specifies the thickness and style of the border surrounding the content area and padding. </p>
                     <p>4. Margin specifies the amount of space between border and the outside edge of the element. </p>
+                    </div>
                 </div>
             </div>
         )
