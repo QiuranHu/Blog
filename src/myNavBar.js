@@ -42,7 +42,7 @@ class MyNavBar extends Component {
 
                     <div className="navbar-icons-container">
                         <div className="navbar-icons">
-                            <span className="navbar-icon" id="navbar-icon-search">
+                            <span className="navbar-icon" id="navbar-icon-search" onClick={this.props.showOrHideTopSearch}>
                                 <img src={search} alt="search">
                                 </img>
                             </span>

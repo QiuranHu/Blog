@@ -1,10 +1,21 @@
 import React from 'react';
 import {Component} from 'react';
+import search from './search.svg';
+import serializeForm from 'form-serialize';
+import cancel from './cancel.svg';
 
 class TopSearch extends Component {
+    
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const values = serializeForm(e.target, { hash: true });
+        this.props.updateQuery(values.search);
+        this.props.myHistory.push('/queryresult')
+    }
     render() {
+        return(
         <div className="topsearch">
-            <form className="navbar-input-container" onSubmit={this.handleSubmit}>
+            <form className="topsearch-formcontainer" onSubmit={this.handleSubmit}>
                 <div className="navbar-input-box">
                     <input className="navbar-input" placeholder="Search" name="search"></input>
                 </div>
@@ -15,7 +26,11 @@ class TopSearch extends Component {
                     >
                     </img>
                 </button>
+                <img src={cancel} alt="close" className="topsearch-cancel" onClick={this.props.showOrHideTopSearch}></img>
             </form>
         </div>
+        )
     }
 }
+
+export default TopSearch;

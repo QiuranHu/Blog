@@ -7,6 +7,7 @@ import CSSBasic from './Web/CSSBasic';
 import ReactLifecycleEvent from './Web/ReactLifecycleEvent';
 import QueryResult from './QueryResult';
 import JavaScriptBasic from './Web/JavaScriptBasic';
+import TopSearch from './TopSearch';
 
 
 import './App.css';
@@ -19,7 +20,7 @@ class App extends Component {
     { name: "React Lifecycle Event", url: "/web/react-lifecycle-event", title: "React" },
     { name: "JavaScript Basics", url: "/web/javascript-basic", title: "JavaScript" }
     ],
-
+    ifTopSearchPresent: false,
   }
   goToRandomPage = () => {
     function getRandomInt(max) {
@@ -31,14 +32,30 @@ class App extends Component {
     this.setState({ query: newQuery });
     console.log(this.props);
   }
+  showOrHideTopSearch = () => {
+    if(this.state.ifTopSearchPresent === false) {
+      let topSearch = document.querySelector('.topsearch');
+      topSearch.style.top = 0;
+      this.setState({ifTopSearchPresent: true});
+    } else {
+      let topSearch = document.querySelector('.topsearch');
+      topSearch.style.top = '-56px';
+      this.setState({ifTopSearchPresent: false});
+    }
+  }
   render() {
     return (
 
       <div className="App">
         <Route path="/" render={({ history }) => {
-          return (<MyNavBar updateQuery={this.updateQuery} myHistory={history} />)
+          return (<MyNavBar updateQuery={this.updateQuery} myHistory={history} showOrHideTopSearch = {() => this.showOrHideTopSearch()}/>)
         }}>
 
+        </Route>
+
+        <Route path="/" render={({ history }) => {
+          return (<TopSearch updateQuery={this.updateQuery} myHistory={history} showOrHideTopSearch = {() => this.showOrHideTopSearch()}/>)
+        }}>
 
         </Route>
         <div className="main-content">

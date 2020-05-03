@@ -66,7 +66,7 @@ body {
     height: var(--navbar-height);
     display: flex;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .navbar-content {
@@ -191,6 +191,7 @@ body {
 @media only screen and (max-width: 600px) {
     #navbar-icon-search {
         display: inline;
+        cursor: pointer;
     }
 }
 @media only screen and (max-width: 400px) {
@@ -348,3 +349,31 @@ body {
     background-color: #28a745;
     color: white;
 }
+
+.topsearch {
+    z-index: 2;
+    position: fixed;
+    top: calc(0px - var(--navbar-height));
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.topsearch-formcontainer {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.topsearch-cancel {
+    padding-left: 1em;
+    cursor: pointer;
+}
+
