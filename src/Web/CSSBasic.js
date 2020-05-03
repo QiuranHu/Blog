@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class CSSBasic extends Component {
     render() {
         return (
-            <div className="col-12 col-lg-10 ml-auto mainContent">
-                <div className="container mt-3">
+            <div className="mainContent">
+                <div className="container">
                     <div className="center">
                         <p>This is an article about CSS.</p>
                     </div>

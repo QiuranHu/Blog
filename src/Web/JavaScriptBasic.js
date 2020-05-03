@@ -4,7 +4,7 @@ class JavaScriptBasic extends Component {
     render() {
         return (
             <div className="mainContent">
-                <div className="container mt-3">
+                <div className="container">
                     <div className="center">
                         <p>This is an article about JavaScript.</p>
                     </div>
@@ -24,8 +24,8 @@ class JavaScriptBasic extends Component {
                     </p>
                     <p>7. <span className="textWithBackground">Object</span>: Collection of related data. </p>
                     <h4>2. length</h4>
-                    <p>Every String has a <span className="badge badge-pill badge-success">length</span> property that specifies how many characters it has.</p>
-                    <h4>3. <span className="badge badge-pill badge-success">trim</span> method of String</h4>
+                    <p>Every String has a <span className="">length</span> property that specifies how many characters it has.</p>
+                    <h4>3. <span className="">trim</span> method of String</h4>
                     <p>Remove the whitespace at the begining and end of the string.</p>
                     <h4>4. Some function about numbers.</h4>
                     <p><span className="textWithBackground">Math.floor(number)</span> returns the largest integer smaller
