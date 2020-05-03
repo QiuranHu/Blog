@@ -4,6 +4,7 @@ import search from './search.svg';
 import serializeForm from 'form-serialize';
 import cancel from './cancel.svg';
 
+
 class TopSearch extends Component {
     
     handleSubmit = (e) => {

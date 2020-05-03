@@ -21,7 +21,7 @@ class MyNavBar extends Component {
                 <div className="navbar-content">
                     <div className="navbar-logo" >
                         <span className="navbar-icon">
-                            <img src={dehaze} alt="more information" id="navbar-more">
+                            <img src={dehaze} alt="more information" id="navbar-more" onClick={this.props.showOrHideSideNav}>
                             </img>
                         </span>
                         <Link to="/" className="navbar-logo-text">My blog</Link>

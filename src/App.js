@@ -8,6 +8,7 @@ import ReactLifecycleEvent from './Web/ReactLifecycleEvent';
 import QueryResult from './QueryResult';
 import JavaScriptBasic from './Web/JavaScriptBasic';
 import TopSearch from './TopSearch';
+import SideNav from './SideNav';
 
 
 import './App.css';
@@ -21,6 +22,7 @@ class App extends Component {
     { name: "JavaScript Basics", url: "/web/javascript-basic", title: "JavaScript" }
     ],
     ifTopSearchPresent: false,
+    ifSideNavPresent: false
   }
   goToRandomPage = () => {
     function getRandomInt(max) {
@@ -43,12 +45,33 @@ class App extends Component {
       this.setState({ifTopSearchPresent: false});
     }
   }
+  showOrHideSideNav = () => {
+    let {ifSideNavPresent} = this.state;
+    if(!ifSideNavPresent) {
+      let sideNavContainer = document.getElementsByClassName("sideNavContainer")[0];
+      sideNavContainer.style.visibility = "visible";
+      let sideNav = document.getElementsByClassName("sideNav")[0];
+      sideNav.style.left = "0";
+      this.setState({ifSideNavPresent: true});
+    } else {
+      let sideNavContainer = document.getElementsByClassName("sideNavContainer")[0];
+      sideNavContainer.style.visibility = "hidden";
+      let sideNav = document.getElementsByClassName("sideNav")[0];
+      sideNav.style.left = "-250px";
+      this.setState({ifSideNavPresent: false});
+    }
+  }
   render() {
     return (
 
       <div className="App">
         <Route path="/" render={({ history }) => {
-          return (<MyNavBar updateQuery={this.updateQuery} myHistory={history} showOrHideTopSearch = {() => this.showOrHideTopSearch()}/>)
+          return (<SideNav updateQuery={this.updateQuery} myHistory={history} showOrHideSideNav={() => this.showOrHideSideNav()}/>)
+        }}>
+
+        </Route>
+        <Route path="/" render={({ history }) => {
+          return (<MyNavBar updateQuery={this.updateQuery} myHistory={history} showOrHideTopSearch = {() => this.showOrHideTopSearch()} showOrHideSideNav={() => this.showOrHideSideNav()}/>)
         }}>
 
         </Route>
