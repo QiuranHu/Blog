@@ -16,7 +16,7 @@ class SideNav extends Component {
                     <img src={cancel} alt="close" className="closeSideNavIcon" onClick={() => {this.props.showOrHideSideNav()}}></img>
                     <ul className="sideNavList">
                         <li className="sideNavListItem">
-                            <img src={web} alt="web" className="sideNavListItemIcon" onClick={() => this.goTo("./web")}></img>
+                            <img src={web} alt="web" className="sideNavListItemIcon" onClick={() => this.goTo("/web")}></img>
                             <Link to="/web" className="sideNavLink" onClick = {() => {this.props.showOrHideSideNav()}}>web</Link>
                         </li>
                     </ul>
