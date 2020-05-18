@@ -57,7 +57,10 @@ body {
     margin: 0;
     padding: 0;
     --navbar-height: 56px;
+    overflow-x: hidden;
 }
+
+
 .navbar {
     background-color: white;
     position: fixed;
@@ -218,13 +221,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: calc(100vh - 56px);
+    width: 100vw;
 }
 
 .welcomepage-content {
     display: flex;
-
     flex-direction: column;
     align-items: center;
+
 }
 
 .welcomepage-button {

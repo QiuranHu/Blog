@@ -1,0 +1,41 @@
+.web {
+    display: flex;
+
+}
+
+.webDescription {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.buttonContainer {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* .webImage {
+    
+} */
+
+.webImageContainer {
+    display: flex;
+    flex-basis: 330px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 770px) {
+    .webImageContainer {
+        flex-basis: 100%;
+    }
+    .webDescription {
+        flex-basis: 100%;
+    }
+    .web {
+        flex-wrap: wrap;
+    }
+}
