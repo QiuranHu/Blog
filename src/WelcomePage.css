@@ -1,0 +1,157 @@
+.web {
+  display: flex;
+}
+
+.webDescription {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.buttonContainer {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* .webImage {
+    
+} */
+
+.webImageContainer {
+  display: flex;
+  flex-basis: 330px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 770px) {
+  .webImageContainer {
+    flex-basis: 100%;
+  }
+  .webDescription {
+    flex-basis: 100%;
+  }
+  .web {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .welcome-banner {
+      display: flex;
+  }
+}
+
+.welcome-banner-item {
+    flex-basis: 0%;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 20px;
+
+}
+
+.welcome-banner-web {
+  background-color:#FED400;
+}
+
+.welcome-banner-tool {
+  background-color:#34B8F8;
+}
+
+.welcomepage {
+  background-color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .welcome-banner-web {
+    padding-left: 120px;
+  }
+}
+
+.welcome-banner-item > img {
+  float:left;
+  margin-right: 16px;
+}
+
+.welcome-banner-item > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.welcome-banner-item > p {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.welcome-banner-item img {
+  height: 75px;
+  width: 75px;
+}
+
+@media screen and (min-width: 600px) {
+  .welcome-banner-item img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .welcome-banner-item img {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .welcome-banner-item img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+p {
+  margin: 16px 0;
+  padding: 0;
+}
+
+.welcome-web-button {
+  float: right;
+  color: #1a73e8;
+  border: 1px solid #e8f0fe;
+  height: 36px;
+  overflow: hidden;
+  border: 1px solid #dadce0;
+  background: #fff;
+  padding: 0 24px;
+  text-decoration: none;
+  line-height: 36px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.welcome-web-button:hover {
+  background:#e8f0fe;
+}
+
+.welcome-web-tool-button{
+  cursor:default;
+  background-color: whitesmoke;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  height: 0;
+  display: table;
+}
