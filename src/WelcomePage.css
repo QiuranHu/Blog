@@ -16,10 +16,6 @@
   justify-content: center;
 }
 
-/* .webImage {
-    
-} */
-
 .webImageContainer {
   display: flex;
   flex-basis: 330px;
@@ -39,32 +35,34 @@
   }
 }
 
-
-@media screen and (min-width: 480px) {
-  .welcome-banner {
-      display: flex;
-  }
+.welcomepage {
+  background-color: white;
 }
 
-.welcome-banner-item {
-    flex-basis: 0%;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 20px;
+p {
+  margin: 16px 0;
+  padding: 0;
+}
 
+/* 
+Welcome banner
+*/
+@media screen and (min-width: 480px) {
+  .welcome-banner {
+    display: flex;
+  }
+}
+.welcome-banner-item {
+  flex: 1 0 0%;
+  padding: 20px;
 }
 
 .welcome-banner-web {
-  background-color:#FED400;
+  background-color: #fed400;
 }
 
 .welcome-banner-tool {
-  background-color:#34B8F8;
-}
-
-.welcomepage {
-  background-color: white;
+  background-color: #34b8f8;
 }
 
 @media screen and (min-width: 1000px) {
@@ -74,7 +72,7 @@
 }
 
 .welcome-banner-item > img {
-  float:left;
+  float: left;
   margin-right: 16px;
 }
 
@@ -119,11 +117,6 @@
   }
 }
 
-p {
-  margin: 16px 0;
-  padding: 0;
-}
-
 .welcome-web-button {
   float: right;
   color: #1a73e8;
@@ -141,17 +134,63 @@ p {
 }
 
 .welcome-web-button:hover {
-  background:#e8f0fe;
+  background: #e8f0fe;
 }
 
-.welcome-web-tool-button{
-  cursor:default;
+.welcome-web-tool-button {
+  cursor: default;
   background-color: whitesmoke;
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
-  content: "";
-  height: 0;
   display: table;
+  content: "";
+}
+
+/* Welcome hero */
+.welcome-hero {
+  display: flex;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.welcome-hero-imgcontainer {
+  flex: 0 0 calc(200%/3);
+}
+
+.welcome-hero-img {
+  max-width: 100%;;
+}
+
+.welcome-hero-content {
+  flex: 1;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-hero {
+    flex-direction: column;
+  }
+  .welcome-hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.welcome-hero {
+  background-color: #fff;
+}
+
+.welcome-hero-button {
+  background: #1a73e8;
+  padding: 0 12px;
+  height: 36px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  line-height: 36px;
+  border-radius: 4px;
 }

@@ -3,10 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-    font-family: 'Open Sans','Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 .mysidebar {
@@ -57,7 +56,6 @@ body {
     margin: 0;
     padding: 0;
     --navbar-height: 56px;
-    overflow-x: hidden;
 }
 
 
