@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import webImage from "./images/web.png";
-import toolImage from './images/tool.png';
-import webHero from './images/web-hero.jpg';
+import webImage from "../images/web.png";
+import toolImage from '../images/tool.png';
+import webHero from '../images/web-hero.jpg';
 import { Link } from "react-router-dom";
 import './WelcomePage.css';
 class WelcomePage extends Component {

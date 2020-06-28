@@ -1,8 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
-import search from './search.svg';
+import search from '../images/search.svg';
 import serializeForm from 'form-serialize';
-import cancel from './cancel.svg';
+import cancel from '../images/cancel.svg';
 
 
 class TopSearch extends Component {

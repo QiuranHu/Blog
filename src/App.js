@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import MyNavBar from './myNavBar';
+import MyNavBar from './components/myNavBar';
 import { Route } from 'react-router-dom';
-import WelcomePage from './WelcomePage';
-import Web from "./Web";
-import CSSBasic from './Web/CSSBasic';
-import ReactLifecycleEvent from './Web/ReactLifecycleEvent';
-import QueryResult from './QueryResult';
-import JavaScriptBasic from './Web/JavaScriptBasic';
-import TopSearch from './TopSearch';
-import SideNav from './SideNav';
+import WelcomePage from './components/WelcomePage';
+import Web from "./components/Web.js";
+import CSSBasic from './components/web/CSSBasic';
+import ReactLifecycleEvent from './components/web/ReactLifecycleEvent';
+import QueryResult from './components/QueryResult';
+import JavaScriptBasic from './components/web/JavaScriptBasic';
+import TopSearch from './components/TopSearch';
+import SideNav from './components/SideNav';
 
 
 import './App.css';

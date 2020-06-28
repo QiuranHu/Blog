@@ -29,7 +29,7 @@ class CSSBasic extends Component {
                         The last step is very easy. We use the declaration that comes <span className="textWithRedUnderline">later</span> in source code.
                     </p>
                     <h4>2. Specificity</h4>
-                    <p>ID selector > class selector > tag selector.</p>
+                    <p>ID selector {">"} class selector {">"} tag selector.</p>
 
                     <h4>3. rem, px and em</h4>
                     <p>em is the most common relative length unit. 1em means the font size of the current element. An em on the root element is relative to the browser's default font size, which is 16px.

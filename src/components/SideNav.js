@@ -1,8 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
 import { Link } from "react-router-dom";
-import web from './web.svg';
-import cancel from './cancel.svg';
+import web from '../images/web.svg';
+import cancel from '../images/cancel.svg';
 
 class SideNav extends Component {
     goTo(url) {

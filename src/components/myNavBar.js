@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import serializeForm from 'form-serialize';
-import home from './home.svg';
-import kickstart from './kickstart.svg';
-import web from './web.svg';
-import search from './search.svg';
-import dehaze from './dehaze.svg';
+import home from '../images/home.svg';
+import kickstart from '../images/kickstart.svg';
+import web from '../images/web.svg';
+import search from '../images/search.svg';
+import dehaze from '../images/dehaze.svg';
 
 class MyNavBar extends Component {
 
